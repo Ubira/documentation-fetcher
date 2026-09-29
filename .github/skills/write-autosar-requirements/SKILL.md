@@ -40,7 +40,7 @@ Ask a concise clarifying question only when an unknown changes the requirement m
 
 5. **Assign identifiers and lifecycle.** Preserve supplied IDs and established project numbering. If no scheme exists, use unique provisional IDs `REQ_0001`, `REQ_0002`, and so on, and identify them as provisional. Use `VALID` by default when no lifecycle state is supplied, as the standard defines this as the default. Use `DRAFT` only for explicitly experimental requirements. Use `OBSOLETE` only when the requirement is explicitly obsolete, and state its recommended alternative in the rationale or an accompanying note.
 
-6. **Complete the template fields.** Give each requirement a unique short text for its long name and fill the fields below. Keep rationale and use case grounded in the supplied context. List only explicit dependencies and supporting references. Use `-` when a field is intentionally empty; use `TBD` when information is needed but unavailable. `AppliesTo` accepts only `SPA2`, `SPA3`, and `SPA3x`; do not infer a value from general AUTOSAR context.
+6. **Complete the template fields.** Give each requirement a unique short text for its long name and fill the fields below. Keep rationale and use case grounded in the supplied context. List only explicit dependencies and supporting references. Use `-` when a field is intentionally empty; use `TBD` when information is needed but unavailable. `AppliesTo` accepts only `CP`, `AP`, and `FO`; do not infer a value from general AUTOSAR context.
 
 7. **Check quality and deliver.** Review every statement against the checklist below. Return the requirements in Markdown using the template field names. Follow the user's requested file destination if provided; otherwise present the result in the response and ask before creating a new requirements document.
 
@@ -55,7 +55,7 @@ Create one table per requirement, using this field order:
 | **Unique Short Text (longName)** | Concise requirement headline |
 | **Description** | The <subject> shall <verifiable statement>. |
 | **Rationale** | Grounded justification, or `-` |
-| **AppliesTo** | `SPA2`, `SPA3`, and/or `SPA3x`, or `TBD` |
+| **AppliesTo** | `CP`, `AP`, and/or `FO`, or `TBD` |
 | **Use Case** | Grounded use case, or `-` |
 | **Dependencies** | Explicit requirement references, or `-` |
 | **Supporting Material** | Supplied references, or `-` |
@@ -70,7 +70,7 @@ When useful, add a brief **Open Questions and Assumptions** section after the ta
 - [ ] Conditions distinguish static `if` from event-based `when` and use `then` where appropriate.
 - [ ] Obligation strength matches the source; no new mandatory behavior has been inferred.
 - [ ] Lifecycle state follows the standard; `VALID` is the default when unspecified.
-- [ ] `AppliesTo` contains only `SPA2`, `SPA3`, or `SPA3x`, or is explicitly marked `TBD`.
+- [ ] `AppliesTo` contains only `CP`, `AP`, or `FO`, or is explicitly marked `TBD`.
 - [ ] Rationale, use case, dependencies, and supporting material are grounded in supplied information.
 - [ ] Unknowns are visible as `TBD` or open questions rather than presented as facts.
 - [ ] The output follows the requirement definition's template and requested destination.
