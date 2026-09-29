@@ -161,7 +161,7 @@ is used within AUTOSAR RS documents.⌋
 | --- | --- |
 | **Enumeration** | StandardNameEnum |
 | **Note** | This enumeration lists all allowed standard abbreviations |
-| **Literal** | SPA2, SPA3, SPA3x |
+| **Literal** | CP,AP,FO |
 
 # Requirement Template
 |  |  |
